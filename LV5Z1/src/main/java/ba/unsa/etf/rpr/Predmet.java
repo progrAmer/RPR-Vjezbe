@@ -1,9 +1,13 @@
 package ba.unsa.etf.rpr;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Predmet implements MozePredstaviti {
 
   private String naziv;
   private String opis;
+  private List<Ocjena> ocjene = new ArrayList<>();
 
   public Predmet(String naziv, String opis) {
     this.naziv = naziv;
@@ -28,5 +32,13 @@ public class Predmet implements MozePredstaviti {
 
   public String predstavi() {
     return "naziv='" + naziv + '\'' + ", opis='" + opis + '\'';
+  }
+
+  public void dodajOcjenu(Ocjena ocjena) {
+    ocjene.add(ocjena);
+  }
+
+  public List<Ocjena> getOcjene() {
+    return ocjene;
   }
 }
