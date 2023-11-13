@@ -1,6 +1,6 @@
 package ba.unsa.etf.rpr;
 
-public class Predmet implements PredstavljivTip {
+public class Predmet implements MozePredstaviti {
 
   private String naziv;
   private String opis;

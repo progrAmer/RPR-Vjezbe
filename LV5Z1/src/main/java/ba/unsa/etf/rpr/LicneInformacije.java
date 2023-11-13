@@ -1,6 +1,6 @@
 package ba.unsa.etf.rpr;
 
-public class LicneInformacije implements PredstavljivTip {
+public class LicneInformacije implements MozePredstaviti {
 
   private String ime;
   private String prezime;

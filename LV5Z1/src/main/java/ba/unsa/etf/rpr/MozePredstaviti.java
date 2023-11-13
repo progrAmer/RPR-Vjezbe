@@ -1,6 +1,6 @@
 package ba.unsa.etf.rpr;
 
-public interface PredstavljivTip {
+public interface MozePredstaviti {
 
   String predstavi();
 
